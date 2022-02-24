@@ -3,24 +3,13 @@ name = "nft-example"
 authors = []
 description = ""
 telemetry = false
-requirements = []
+requirements = [
+    { contract_id = "SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait" },
+]
 [contracts.my-nft]
 path = "contracts/my-nft.clar"
-depends_on = ["nft-trait"]
-
-[contracts.nft-trait]
-path = "contracts/nft-trait.clar"
 depends_on = []
 
 [repl]
 costs_version = 2
 parser_version = 2
-
-[repl.analysis]
-passes = ["check_checker"]
-
-[repl.analysis.check_checker]
-strict = false
-trusted_sender = false
-trusted_caller = false
-callee_filter = false

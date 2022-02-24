@@ -1,6 +1,6 @@
 ;; use the SIP009 interface (testnet)
 ;; trait deployed by deployer address from ./settings/Devnet.toml
-(impl-trait .nft-trait.nft-trait)
+(impl-trait 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait.nft-trait)
 
 ;; define a new NFT. Make sure to replace MY-OWN-NFT
 (define-non-fungible-token MY-OWN-NFT uint)
